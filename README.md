@@ -43,7 +43,7 @@ See the file doc/COPYING for more information.
 
 # Contact
 
-John S. Jacob
-jsjacob@iamnota.com
+John S. Jacob  
+jsjacob@iamnota.com  
 http://www.spellingpractice.org/
 
