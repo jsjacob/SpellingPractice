@@ -1,0 +1,60 @@
+<project name="SpellingPractice" default="compile" basedir=".">
+    <description>
+        SpellingPractice build file
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src/"/>
+  <property name="doc" location="doc/"/>
+  <property name="build" location="/tmp/SpellingPractice/build"/>
+  <property name="dist"  location="/tmp/SpellingPractice/dist"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+     <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src-*} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}" debug="on"/>
+  </target>
+
+  <target name="dist" depends="compile"
+        description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/${DSTAMP}"/>
+
+    <!-- Put everything in ${build}/com/iamnota/SpellingPractice/Teacher into the SpellingPractice-Teacher.jar file -->
+    <jar jarfile="${dist}/${DSTAMP}/SpellingPractice-Teacher.jar" basedir="${build}" includes="com/iamnota/SpellingPractice/Teacher/** com/iamnota/SpellingPractice/common/**">
+      <manifest>
+        <attribute name="Manifest-Version" value="1.0"/>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Main-Class" value="com.iamnota.SpellingPractice.Teacher.Application"/>
+      </manifest>
+    </jar>
+
+    <!-- Put everything in ${build}/com/iamnota/SpellingPractice/Student into the SpellingPractice-Student.jar file -->
+    <jar jarfile="${dist}/${DSTAMP}/SpellingPractice-Student.jar" basedir="${build}" includes="com/iamnota/SpellingPractice/Student/** com/iamnota/SpellingPractice/common/**">
+      <manifest>
+        <attribute name="Manifest-Version" value="1.0"/>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Main-Class" value="com.iamnota.SpellingPractice.Student.Application"/>
+      </manifest>
+    </jar>
+
+    <!-- Build documentation -->
+    <jar jarfile="${dist}/${DSTAMP}/SpellingPractice-doc.jar" basedir="${doc}"/>
+
+    <!-- Build source -->
+    <jar jarfile="${dist}/${DSTAMP}/SpellingPractice-src.jar" basedir="."/>
+  </target>
+
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>

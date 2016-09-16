@@ -1,0 +1,85 @@
+2004-01-04  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher: [Student] Add clear statistics.
+	* Student: Tweak Login UI.
+	
+2004-01-03  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Add "2004" to copyright.
+	* Teacher: [Student] Combine open list into dialog box.
+	* Teacher: [Student] Add statistics to dialog box.
+	* Teacher: [Student] Add "all students" report.
+	* Teacher: [Word] Combine open list into dialog box.
+	* Teacher: [Word] Add "all words" report.
+	* Teacher: [Student, Word] Add option to display testing or directed statistics.
+	
+2003-08-31  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Student: Add log file "StudentLog.txt" saved to current directory.
+
+	* Teacher: Add log file "TeacherLog.txt" saved to current directory.
+
+	* Add Modes: Random (previous Statistics Off), Directed (previous Statistics On),
+		Test (each word exactly once), TestAndDirected (each word exactly once, then Directed)
+
+2003-01-22  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Add "2003" to copyright.
+	* Word-wrap message boxes
+	
+2002-12-30  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Student: Auto-login student if configured.
+	* Teacher: [Student] Add auto-login configuration.
+
+2002-12-26  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher: Ask for password on startup if configured with password.
+	* Teacher: [Student] Ask to save changes to word
+	* Teacher: [Student] Enable/disable "Save" menu item
+	* Teacher: [Student] Continue action after asking to save changes if yes.
+	* Teacher: [Word] Enable/disable "Save" menu item
+	* Teacher: [Word] Continue action after asking to save changes if yes.
+
+2002-12-24  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher: Ask to save changes to word.
+
+2002-12-19  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher, Student: Text-wrap message boxes
+	* Teacher, Student: Add "(C)" symbol to copyright
+
+2002-11-17  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher, Student: swapped ids-to-* maps
+	* Student: added statistics
+
+2002-11-12  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher, Student: modified window titles to display "SpellingPractice" instead of "Spelling Practice"
+	* Teacher, Student: fixed errors in example configurations
+	* Teacher, Student: added "Main-Class" attribute to JAR files and modified example startup scripts to execute JARs directly
+	* Teacher, Student: added Mac OS X sections in INSTALL
+
+2002-11-07  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher, Student: added INSTALL file
+	* Teacher, Student: modified example configuration to match installation instructions
+
+2002-11-06  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Teacher, Student: scroll About window to top when creating.
+	* Teacher, Student: only show About window on startup.
+	* Teacher, Student: add logging capability (LogView). Choose class with preference (Teacher.Log.View, Student.Log.View).
+	* Teacher, Student: add log level preference (Teacher.Log.level, Student.Log.level) -- "error", "warning", "debug".
+	* Teacher: limit audio recording with preference (Teacher.Word.Audio.maxDurationInSeconds).
+	* Teacher, Student: remove sentence audio.
+	* Teacher, Student: provide default preference file names (spteacher.rc, spstudent.rc).
+	* Teacher, Student: added startup scripts for win32 and unix.
+
+2002-11-01  John S. Jacob  <jsjacob@iamnota.com>
+
+	* Version 0.1.0 initial release
+	
+

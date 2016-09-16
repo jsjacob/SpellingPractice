@@ -1,0 +1,40 @@
+#
+# Teacher - Spelling Practice
+#
+
+# Uncomment the following line and set a password if desired.
+#Teacher.password=
+
+# Default font size for all text
+Teacher.font.size=18.0
+
+# Directory for student information
+Teacher.Student.Storage.directory=students
+
+# Directory for words
+Teacher.Word.Storage.directory=words
+
+# Maximum word audio recording duration in seconds
+Teacher.Word.Audio.maxDurationInSeconds=20
+
+
+#
+# Should not need to change the options below
+#
+
+# Message reporting level
+Teacher.Log.level=warning
+
+# Implementation classes
+Teacher.View=com.iamnota.SpellingPractice.Teacher.jdk13.ViewImpl
+Teacher.Log.View=com.iamnota.SpellingPractice.Teacher.jdk13.LogViewImpl
+Teacher.Preference.Model=com.iamnota.SpellingPractice.Teacher.jdk11.PreferenceModelImpl
+Teacher.Preference.View=com.iamnota.SpellingPractice.Teacher.jdk13.PreferenceViewImpl
+Teacher.Preference.Storage=com.iamnota.SpellingPractice.Teacher.jdk13.PreferenceStorageImpl
+Teacher.Student.Model=com.iamnota.SpellingPractice.Teacher.jdk11.StudentModelImpl
+Teacher.Student.View=com.iamnota.SpellingPractice.Teacher.jdk13.StudentViewImpl
+Teacher.Student.Storage=com.iamnota.SpellingPractice.Teacher.jdk11.StudentStorageImpl
+Teacher.Word.Model=com.iamnota.SpellingPractice.Teacher.jdk13.WordModelImpl
+Teacher.Word.View=com.iamnota.SpellingPractice.Teacher.jdk13.WordViewImpl
+Teacher.Word.Storage=com.iamnota.SpellingPractice.Teacher.jdk13.WordStorageImpl
+Teacher.Word.Audio=com.iamnota.SpellingPractice.Teacher.jdk13.WordAudioImpl

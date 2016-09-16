@@ -1,0 +1,38 @@
+#
+# Student - Spelling Practice
+#
+
+# Default font size for all text
+Student.font.size=18.0
+
+# Directory for student information
+# Be sure to use two (2) backslashes (\) for each backslash in path
+Student.Student.Storage.directory=C:\\Program Files\\SpellingPractice\\students
+
+# Directory for words
+# Be sure to use two (2) backslashes (\) for each backslash in path
+Student.Word.Storage.directory=C:\\Program Files\\SpellingPractice\\words
+
+
+#
+# Should not need to change the options below
+#
+
+# Message reporting level
+Student.Log.level=warning
+
+# Implementation classes
+Student.View=com.iamnota.SpellingPractice.Student.jdk13.ViewImpl
+Student.Log.View=com.iamnota.SpellingPractice.Student.jdk13.LogViewImpl
+Student.Preference.Model=com.iamnota.SpellingPractice.Student.jdk11.PreferenceModelImpl
+Student.Preference.Storage=com.iamnota.SpellingPractice.Student.jdk11.PreferenceStorageImpl
+Student.Student.Model=com.iamnota.SpellingPractice.Student.jdk11.StudentModelImpl
+Student.Student.View=com.iamnota.SpellingPractice.Student.jdk13.StudentViewImpl
+Student.Student.Storage=com.iamnota.SpellingPractice.Student.jdk11.StudentStorageImpl
+Student.Statistics.Model=com.iamnota.SpellingPractice.Student.jdk11.StatisticsModelImpl
+Student.Statistics.Storage=com.iamnota.SpellingPractice.Student.jdk13.StatisticsStorageImpl
+Student.Word.Model=com.iamnota.SpellingPractice.Student.jdk13.WordModelImpl
+Student.Word.View=com.iamnota.SpellingPractice.Student.jdk13.WordViewImpl
+Student.Preference.View=com.iamnota.SpellingPractice.Student.jdk13.PreferenceViewImpl
+Student.Word.Storage=com.iamnota.SpellingPractice.Student.jdk13.WordStorageImpl
+Student.Word.Audio=com.iamnota.SpellingPractice.Student.jdk13.WordAudioImpl

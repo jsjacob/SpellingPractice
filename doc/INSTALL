@@ -1,0 +1,146 @@
+SpellingPractice INSTALL
+------------------------
+
+SpellingPractice
+Version 0.5.0
+Copyright (C) 2002-2004 John S. Jacob
+January 4, 2004
+
+http://www.spellingpractice.org/
+
+
+Requirements
+------------
+
+SpellingPractice was written for the Java 2 platform version 1.3.1 or
+higher and has been tested on MS Windows 98, Mac OS X 10.2, and Red
+Hat Linux 9. Sound input (e.g., microphone) and output (e.g.,
+speakers) are also required.
+
+
+Windows:
+
+On Windows 98 machines with 32 MB of RAM or lower, the Sun Java
+Runtime Environment 1.4.1 has problems with graphics. The IBM Java
+Runtime Environment 1.3.1 is recommended when running on Windows 98
+with 32 MB of RAM or lower.
+
+1) Create the folder "C:\Program Files\SpellingPractice"
+
+2) Copy the following files to "C:\Program Files\SpellingPractice":
+   * SpellingPractice-Teacher.jar
+   * SpellingPractice-Student.jar
+   * doc\example\win32\spteacher.bat
+   * doc\example\win32\spstudent.bat
+   * doc\example\win32\spteacher.rc
+   * doc\example\win32\spstudent.rc
+   * doc\example\win32\Teacher - SpellingPractice.pif
+   * doc\example\win32\Student - SpellingPractice.pif
+
+3) Edit spteacher.bat and spstudent.bat and uncomment (i.e., remove
+   the "REM") from the batch script line for your Java Runtime
+   Environment. If you are using Sun's JRE, then the line
+
+   set JRE_HOME="C:\Program Files\Java\j2re1.4.1"
+
+   should be uncommented. If you are using IBM's JRE, then the line
+
+   set JRE_HOME="C:\WSDK\sdk\jre"
+
+   should be uncommented.
+
+4) Edit spteacher.rc and spstudent.rc if you would like to customize
+   any parameters. The standard settings should suffice for most
+   installations.
+
+5) Double-click on "Teacher - SpellingPractice" or
+   "Student - SpellingPractice" to run the programs.
+
+
+Mac OS X:
+
+On Mac OS X 10.2 and below, the Java Runtime Environment Sound API
+cannot record sound. Words and associated audio can be file-copied
+from other platforms.
+
+1) Create the folder "/Users/Shared/SpellingPractice"
+
+2) Copy the following files to "/Users/Shared/SpellingPractice":
+   * SpellingPractice-Teacher.jar
+   * SpellingPractice-Student.jar
+   * doc/example/macosx/spteacher.rc
+   * doc/example/macosx/spstudent.rc
+
+3) Edit spteacher.rc and spstudent.rc if you would like to customize
+   any parameters. The standard settings should suffice for most
+   installations.
+
+4) Double-click on "SpellingPractice-Teacher.jar" or
+   "SpellingPractice-Student.jar" to run the programs.
+
+
+Linux:
+
+On Linux, the Sun Java Runtime Environment has problems with
+sound. The IBM Java Runtime Environment 1.3.1 is recommended when
+running on Linux.
+
+1) Create the directory "/usr/local/SpellingPractice"
+
+2) Copy the following files to "/usr/local/SpellingPractice":
+   * SpellingPractice-Teacher.jar
+   * SpellingPractice-Student.jar
+   * doc/example/unix/spteacher.rc
+   * doc/example/unix/spstudent.rc
+   * doc/example/unix/spteacher.sh
+   * doc/example/unix/spstudent.sh
+
+3) Run the following commands to make the shell scripts executable:
+   % chmod +x /usr/local/SpellingPractice/spteacher.sh
+   % chmod +x /usr/local/SpellingPractice/spstudent.sh
+
+4) Edit spteacher.sh and spstudent.sh and uncomment (i.e., remove
+   the "#") from the shell script line for your Java Runtime
+   Environment. If you are using IBM's JRE, then the line
+
+   JRE_HOME=/opt/IBMJava2-131/jre
+
+   should be uncommented. If you are using Sun's JRE, then the line
+
+   JRE_HOME=/usr/java/j2sdk1.4.1/jre
+
+   should be uncommented.
+
+5) Edit spteacher.rc and spstudent.rc if you would like to customize
+   any parameters. The standard settings should suffice for most
+   installations.
+
+6) Run the shell scripts from the command line to run the programs.
+   % /usr/local/SpellingPractice/spteacher.sh
+   % /usr/local/SpellingPractice/spstudent.sh
+
+
+License
+-------
+
+SpellingPractice is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+SpellingPractice is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+See the file doc/COPYING for more information.
+
+
+Contact
+-------
+
+John S. Jacob
+jsjacob@iamnota.com
+http://www.spellingpractice.org/
+
+
