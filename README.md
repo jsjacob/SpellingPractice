@@ -1,0 +1,49 @@
+# SpellingPractice
+
+SpellingPractice  
+Version 0.5.0  
+Copyright (C) 2002-2004 John S. Jacob  
+January 4, 2004
+
+http://www.spellingpractice.org/
+
+
+# Description
+
+SpellingPractice automates self-paced spelling tests and practice with audible pre-recorded cues. The application includes GUIs to record words, enter student information, and perform tests and practice.
+
+
+# Requirements
+
+SpellingPractice was written for the Java 2 platform version 1.3.1 or higher and has been tested on MS Windows 98, Mac OS X 10.2, and Red Hat Linux 9. Sound input (e.g., microphone) and output (e.g., speakers) are also required.
+
+
+# Installation
+
+See doc/INSTALL for installation instructions.
+
+
+# Known issues
+
+On Windows 98 machines with 32 MB of RAM or lower, the Sun Java Runtime Environment 1.4.1 has problems with graphics. The IBM Java Runtime Environment 1.3.1 is recommended when running on Windows 98 with 32 MB of RAM or lower.
+
+On Mac OS X 10.2 and below, the Java Runtime Environment Sound API cannot record sound. Words and associated audio can be file-copied from other platforms.
+
+On Linux, the Sun Java Runtime Environment has problems with sound. The IBM Java Runtime Environment 1.3.1 is recommended when running on Linux.
+
+
+# License
+
+SpellingPractice is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+SpellingPractice is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+See the file doc/COPYING for more information.
+
+
+# Contact
+
+John S. Jacob
+jsjacob@iamnota.com
+http://www.spellingpractice.org/
+
